@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon and Source</title>
+
+    <!-- favicon  -->
+
+    <link rel="shortcut icon" href="../Images/htmlLogo.webp" type="image/x-icon">
+</head>
+<body>
+    <!-- <picture>
+        <source srcset="../Images/cat.jpg" media="(min-width: 800px)" />
+        <source srcset="../Images/leaf.avif" media="(min-width: 600px)" />
+        <img src="../Images/banner.webp" />
+      </picture> -->
+      <hr>
+    <picture>
+        <source srcset="../Images/leaf.avif" media="(max-width: 600px)" />
+        <source srcset="../Images/cat.jpg" media="(max-width: 800px)" />
+        <img src="../Images/banner.webp" />
+      </picture>
+</body>
+</html>
