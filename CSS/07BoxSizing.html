@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing</title>
+
+    <!-- Internal CSS  -->
+    <style>
+        /* =>  * = Universal Selector */
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+        /* Always write these while making any website  */
+
+
+      div {
+        width: 100px;
+        height: 100px;
+        border: 10px solid black;
+        background-color: teal;
+        color: khaki;
+        padding: 20px;
+        margin: auto;
+      }
+      .content-box {
+        box-sizing: content-box;
+        /* Total Width = 100px  + (2 * 20px = 40px) +  (2 * 10px = 20px) => 160px*/
+        /* Total Height = 100px  + (2 * 20px = 40px) +  (2 * 10px = 20px) => 160px*/
+      }
+      .border-box {
+        box-sizing: border-box;
+
+        /* Total Width = 100px  - (2 * 20px = 40px) -  (2 * 10px = 20px) => 40px*/
+        /* Total Height = 100px  - (2 * 20px = 40px) -  (2 * 10px = 20px) => 40px*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-box">content-box</div>
+    <hr />
+    <div class="border-box">border-box</div>
+
+    <!--  Always use Border-box -->
+  </body>
+</html>
