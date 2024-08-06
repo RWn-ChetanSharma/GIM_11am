@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background In CSS</title>
+    <!-- Internal CSS -->
+    <style>
+      div {
+        height: 500px;
+        /* width: 500px; */
+        border: 10px dashed blue;
+        font-size: 50px;
+        margin: 10px auto;
+      }
+      .background-color {
+        background-color: grey;
+      }
+      .background-image {
+        background-image: url(../../Images/banner.webp);
+      }
+      .background-position {
+        background-image: url(../../Images/banner.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 200px;
+
+        background-position: center;
+
+        background-position: 300px 100px;
+        background-position: top;
+        background-position: left;
+        background-position: right;
+        background-position: bottom;
+      }
+      .background-attachment {
+        background: url(../../Images/banner.webp) no-repeat center center/cover;
+        background-attachment: fixed;
+      }
+      .background-repeat {
+        background-image: url(../../Images/banner.webp);
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+      }
+      .background-size {
+        background-image: url(../../Images/banner.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+        background-size: 200px;
+      }
+      .background-blend-mode {
+        background-image: url(../../Images/banner.webp);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-size: 100%;
+        background-color: blue;
+        background-blend-mode: multiply;
+        background-blend-mode: exclusion;
+        background-blend-mode: hard-light;
+        background-blend-mode: hue;
+        height: 100vh;
+      }
+      .filter {
+        background-image: url(../../Images/banner.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        filter: blur(5px);
+        filter: brightness(0.4);
+        filter: contrast(200%);
+        filter: drop-shadow(16px 16px 20px blue);
+        filter: grayscale(50%);
+        filter: hue-rotate(90deg);
+        filter: invert(75%);
+        filter: opacity(25%);
+        filter: saturate(30%);
+        filter: sepia(60%);
+      }
+      .background-shorthand {
+        background: url(../../Images/banner.webp) no-repeat center center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background In CSS</h1>
+
+    <ul>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-position</li>
+      <li>background-attachment</li>
+      <li>background-repeat</li>
+      <li>background-size</li>
+      <li>background-blend-mode</li>
+      <li>filter</li>
+    </ul>
+
+    <hr />
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-position">background-position</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-blend-mode">background-blend-mode</div>
+    <div class="filter">filter</div>
+    <div class="background-shorthand">background-shorthand</div>
+  </body>
+</html>
