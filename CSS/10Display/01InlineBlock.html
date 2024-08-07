@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inline Block</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        .parent{
+            border: 1px solid black;
+        }
+        .box{
+            border: 2px solid red;
+            font-size: 30px;
+            padding: 20px;
+            display:  block;
+            display: inline;
+            /* In inline element , properties of top and bottom are not applicable */
+            display: inline-block;
+
+        }
+        .none{
+            display: none;
+        }
+        /* .none{
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="parent">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
+
+
+    <div class="box none">Display None</div>
+</body>
+</html>
