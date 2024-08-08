@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition In CSS</title>
+
+    <!-- Internal CSS  -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: tan;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        color: aliceblue;
+        font-size: 30px;
+        text-align: center;
+        border: 3px solid lime;
+      }
+      .box:hover {
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color;
+        background-color: crimson;
+      }
+      p{
+        font-size: 30px;
+        background-color: brown;
+        color: burlywood;
+        padding: 20px;
+
+      }
+      p:hover{
+        transition-duration: 5s;
+        transition-timing-function: ease-in-out;
+        transition: all;
+        border: 5px dashed blueviolet;
+        background-color: crimson;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Transition Property : duration, timing-function, delay, property -->
+    <div class="box">Box</div>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptates!
+      Fuga debitis consectetur corrupti velit dolorum omnis, dolores pariatur,
+      temporibus eum cumque consequuntur corporis, suscipit ad officiis facere
+      beatae nam.
+    </p>
+  </body>
+</html>
