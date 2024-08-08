@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animation In CSS</title>
 
-     <!-- Internal CSS  -->
-     <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        body {
-          background-color: tan;
-        }
-        .box {
-          width: 200px;
-          height: 200px;
-          color: aliceblue;
-          font-size: 30px;
-          text-align: center;
-          border: 3px solid lime;
-          background-color: crimson;
+    <!-- Internal CSS  -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: tan;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        color: aliceblue;
+        font-size: 30px;
+        text-align: center;
+        border: 3px solid lime;
+        background-color: crimson;
         animation-name: jadu;
         animation-duration: 5s;
         animation-timing-function: ease-in-out;
-        }
+      }
 
-        @keyframes jadu {
-            from{
-                margin-left: 0px;
-            }
-            to{
-                margin-left: 1000px;
-                transform: rotate(1turn);
-                border-radius: 50%;
-            }
+      @keyframes jadu {
+        from {
+          margin-left: 0px;
         }
-       
-     
-      </style>
-</head>
-<body>
+        to {
+          margin-left: 1000px;
+          transform: rotate(1turn);
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <div class="box">Box</div>
-    
-</body>
+  </body>
 </html>
