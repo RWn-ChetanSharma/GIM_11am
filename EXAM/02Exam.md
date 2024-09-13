@@ -17,6 +17,8 @@
 > (c) 18
 > (d) 21
 
+# Answer (a)
+
 2. If Alice is taller than Bob and Bob is taller than Charlie, who is the shortest?
 
 > (a) Alice
