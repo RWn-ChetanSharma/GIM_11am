@@ -6,8 +6,9 @@
 
 void greetSomthing(){
 	printf("Before");
-	return printf("Namaste Bharat.\n");
-	printf("After");
+	return printf("Namaste Bharat.\n");   
+	printf("After");  
+//	 After Return Statement Nothing will print or no program will excecute.
 }
 
 main(){
